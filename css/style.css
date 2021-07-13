@@ -1,0 +1,22 @@
+:root {
+  --color-heading: #0a0826;
+  --color-para: #6c6c6c;
+  --color-white: #fff;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
