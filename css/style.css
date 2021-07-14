@@ -306,6 +306,7 @@ body {
   /* Latest Videos */
   .videos {
     grid-template-columns: 1fr;
+    row-gap: 1rem;
   }
   .videos__title {
     grid-column: 1 / -1;
