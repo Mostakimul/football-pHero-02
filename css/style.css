@@ -74,21 +74,55 @@ body {
 
 /* Player cards */
 .playerCards {
-  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 7rem;
 }
 .playerCard {
-  background-color: burlywood;
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 4rem rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+}
+.playerCard__img {
+  width: 100%;
+}
+.playerCard__name {
+  font-size: 2.8rem;
+  color: var(--color-heading);
+  padding: 1.5rem 0;
+}
+.playerCard__details {
+  font-size: 1.6rem;
+  color: var(--color-para);
 }
 
 /* Highlights */
 .highlights {
-  background-color: yellowgreen;
+  margin-top: 16.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
 }
 .highlightLeft {
-  background-color: azure;
+  grid-column: 1 / span 1;
+}
+.highlightLeft__title {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+.highlightLeft__details {
+  width: 70%;
+  font-size: 1.6rem;
+  color: var(--color-para);
+  margin-bottom: 2rem;
 }
 .highlightRight {
+  grid-column: 2 / -1;
   background-color: aquamarine;
+}
+.highlightRight__img {
+  width: 100%;
 }
 
 /* Footer */
