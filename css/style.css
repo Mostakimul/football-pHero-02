@@ -1,9 +1,13 @@
+/* Common colors */
 :root {
   --color-heading: #0a0826;
   --color-para: #6c6c6c;
   --color-white: #fff;
+  --color-main: #2d25a0;
+  --color-btn: #e02c6d;
 }
 
+/* Default resets */
 *,
 *::after,
 *::before {
@@ -19,4 +23,75 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+}
+
+/* Setup */
+.header,
+.main,
+.highlights,
+.footer {
+  width: 120em;
+  margin: 0 auto;
+}
+
+.btn {
+  border: 0;
+  background-color: var(--color-btn);
+  color: var(--color-white);
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.6rem 2.5rem;
+}
+
+/* Header Section */
+.container {
+  background-color: var(--color-main);
+}
+.header {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 80vh;
+  place-items: center;
+}
+.headerLeft {
+  grid-column: 1 / span 4;
+}
+.headerLeft__title {
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: var(--color-white);
+  width: 85%;
+}
+.fa-arrow-right {
+  margin-left: 1rem;
+}
+.headerRight {
+  grid-column: 5 / span 4;
+}
+.headerRight__img {
+  width: 100%;
+}
+
+/* Player cards */
+.playerCards {
+  background-color: aquamarine;
+}
+.playerCard {
+  background-color: burlywood;
+}
+
+/* Highlights */
+.highlights {
+  background-color: yellowgreen;
+}
+.highlightLeft {
+  background-color: azure;
+}
+.highlightRight {
+  background-color: aquamarine;
+}
+
+/* Footer */
+.footer {
+  background-color: cadetblue;
 }
