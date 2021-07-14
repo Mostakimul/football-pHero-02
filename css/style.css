@@ -119,7 +119,6 @@ body {
 }
 .highlightRight {
   grid-column: 2 / -1;
-  background-color: aquamarine;
 }
 .highlightRight__img {
   width: 100%;
@@ -127,5 +126,23 @@ body {
 
 /* Footer */
 .footer {
-  background-color: cadetblue;
+  text-align: center;
+  margin-top: 12.5rem;
+  padding: 3rem;
+}
+.footer__img {
+  width: 30%;
+}
+.footer__logos > * {
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  margin: 0.8rem;
+  border-radius: 50%;
+  color: #969bab;
+  background-color: rgb(199, 199, 199);
+}
+.footer__copyright {
+  font-size: 1.8rem;
+  color: var(--color-heading);
+  margin-top: 1rem;
 }
